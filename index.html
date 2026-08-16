@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heutiges Thema</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: min(90%, 700px);
+            text-align: center;
+            padding: 50px 35px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        h1 {
+            margin: 0 0 25px;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 700;
+        }
+
+        .topic {
+            display: inline-block;
+            padding: 16px 28px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: 0.25s ease;
+        }
+
+        .topic:hover {
+            background: rgba(255, 255, 255, 0.18);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Heutiges Thema:</h1>
+
+        <a href="#" class="topic">
+            Die AG beginnt erst noch.
+        </a>
+
+        <div class="footer">
+            <a href="https://github.com/unity-EFialka" target="_blank">EFialka</a>
+        </div>
+    </main>
+</body>
+</html>
